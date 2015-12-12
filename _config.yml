@@ -1,26 +1,20 @@
 # Dependencies
-markdown:         redcarpet
-highlighter:      pygments
+markdown:         kramdown
 
 # Permalinks
-permalink:        pretty
-relative_permalinks: true
+permalink: /:year/:month/:title.html
+# relative_permalinks: true
 
 # Setup
-title:            Hyde
-tagline:          'A Jekyll theme'
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:              http://hyde.getpoole.com
-baseurl:          /
+title:            A Statistics Blog
+tagline:          ''
+description:      'Statstics education with R, and related geekery.'
+baseurl: "/knitr-hyde/" # the subpath of your site, e.g. /blog/
+url: "https://homerhanumat.github.io" # the base hostname & protocol for your site
 
 author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
-
-paginate:         5
-
-# Custom vars
-version:          2.1.0
+  name:           'Homer White'
+  url:            https://statistics.rainandrhino.org
 
 github:
-  repo:           https://github.com/poole/hyde
+  repo:           https://github.com/homerhanumat/knitr-hyde
