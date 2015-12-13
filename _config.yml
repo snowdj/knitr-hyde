@@ -2,14 +2,14 @@
 markdown:         kramdown
 
 # Permalinks
-permalink: /:year/:month/:title.html
+permalink: /:year/:month/:day/:title.html
 # relative_permalinks: true
 
 # Setup
 title:            A Statistics Blog
 tagline:          ''
 description:      'Statstics education with R, and related geekery.'
-baseurl: "/knitr-hyde/" # the subpath of your site, e.g. /blog/
+baseurl: "/knitr-hyde" # the subpath of your site, e.g. /blog/
 baseurlstrip:  "/knitr-hyde" # used in dynamic side-bar
 url: "https://homerhanumat.github.io" # the base hostname & protocol for your site
 
