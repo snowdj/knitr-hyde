@@ -37,9 +37,10 @@ summary(cars)
 ##  Max.   :25.0   Max.   :120.00
 {% endhighlight %}
 
-You can also embed plots, for example:
+You can also embed plots, for example: 
 
-![plot of chunk unnamed-chunk-3](/knitr-hydefigure/source/2015-12-12-sample-post/unnamed-chunk-3-1.png) 
+
+![plot of chunk unnamed-chunk-3](/knitr-hyde/figure/source/2015-12-12-sample-post/unnamed-chunk-3-1.png) 
 
 <p class = "figcaption">Here is a plot for you.</p>
 
