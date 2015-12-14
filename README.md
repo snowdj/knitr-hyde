@@ -24,30 +24,30 @@ If you already have  project repository on Git Hub, then simply create a `gh-pag
 
 You will need to install [Ruby](https://www.ruby-lang.org/en/downloads/), and then install the [Jekyll](http://jekyllrb.com/) gem.  It's best if you install the same version of Jekyll that Git Hub will use to build your page.  You can find the current version [here](https://pages.github.com/versions/).  At the time of writing this is version 2.4.0, so from the command line run:
 
-{% highlight sh %}
+```
 sudo gem install jekyll -v 2.4.0
-{% endhighlight %}
+```
 
 You'll also want a gem that keeps all dependencies of Jekyll at the same version level as used by Git Hub:
 
-{% highlight sh %}
+```
 sudo gem install gh-pages
-{% endhighlight %}
+```
 
 In order to stay current with Git Hub, update this gem frequently:
 
-{% highlight sh %}
+```
 sudo gem update gh-pages
-{% endhighlight %}
+```
 
 ### The servr Package
 
 You'll need Yihui Xie's `servr` package.  In R, run:
 
 
-{% highlight r %}
+```
 install.packages("servr")
-{% endhighlight %}
+```
 
 ## Configuration
 
@@ -64,7 +64,7 @@ Make sure you are on the `gh-pages` branch.  In the root directory, locate the `
 From the `_source` folder, find an R Markdown document and open it.  You'll see YAML front-matter at the beginning, like this:
 
 
-{% highlight yaml %}
+```
 layout:  post
 title: "Sample Post"
 comments:  true
@@ -76,7 +76,7 @@ output:
   html_document:
     mathjax:  default
     fig_caption:  true
-{% endhighlight %}
+```
 
 Set the title, author and date as you wish.  If you post has categories, fill them in, for example:
 
@@ -91,9 +91,9 @@ Save the post using the date-and-title format:
 Write your post.  As you go, you can run the R command:
 
 
-{% highlight r %}
+```
 servr::jekyll()
-{% endhighlight %}
+```
 
 If you are using R Studio then the site will show up in the Viewer.  Every time you save a change to your draft post, the site will re-build, so you can preview your change in real time.  That's the genius of Yihui Xie.
 
