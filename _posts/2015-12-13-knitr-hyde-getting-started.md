@@ -1,4 +1,16 @@
-# Knitr-Hyde
+---
+layout:  post
+title: "Getting Started with Knitr-Hyde"
+comments:  true
+published:  true
+author: "Homer White"
+date: 2015-12-13 20:00:00
+categories: [Documentation]
+output:
+  html_document:
+    mathjax:  default
+    fig_caption:  true
+---
 
 ## Introduction
 
@@ -24,21 +36,21 @@ If you already have  project repository on Git Hub, then simply create a `gh-pag
 
 You will need to install [Ruby](https://www.ruby-lang.org/en/downloads/), and then install the [Jekyll](http://jekyllrb.com/) gem.  It's best if you install the same version of Jekyll that Git Hub will use to build your page.  You can find the current version [here](https://pages.github.com/versions/).  At the time of writing this is version 2.4.0, so from the command line run:
 
-{% highlight sh %}
+```
 sudo gem install jekyll -v 2.4.0
-{% endhighlight %}
+```
 
 You'll also want a gem that keeps all dependencies of Jekyll at the same version level as used by Git Hub:
 
-{% highlight sh %}
+```
 sudo gem install gh-pages
-{% endhighlight %}
+```
 
 In order to stay current with Git Hub, update this gem frequently:
 
-{% highlight sh %}
+```
 sudo gem update gh-pages
-{% endhighlight %}
+```
 
 ### The servr Package
 
@@ -64,7 +76,7 @@ Make sure you are on the `gh-pages` branch.  In the root directory, locate the `
 From the `_source` folder, find an R Markdown document and open it.  You'll see YAML front-matter at the beginning, like this:
 
 
-{% highlight yaml %}
+{% highlight r %}
 layout:  post
 title: "Sample Post"
 comments:  true
