@@ -1,0 +1,17 @@
+{
+    "contents" : "# Ignore docs files\n_gh_pages\n_site\n.ruby-version\n\n# Numerous always-ignore extensions\n*.diff\n*.err\n*.orig\n*.log\n*.rej\n*.swo\n*.swp\n*.zip\n*.vi\n*~\n\n# OS or Editor folders\n.DS_Store\n._*\nThumbs.db\n.cache\n.project\n.settings\n.tmproj\n*.esproj\nnbproject\n*.sublime-project\n*.sublime-workspace\n.idea\n\n# Komodo\n*.komodoproject\n.komodotools\n\n# grunt-html-validation\nvalidation-status.json\nvalidation-report.json\n\n# Folders to ignore\nnode_modules\n",
+    "created" : 1450025405388.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2034899996",
+    "id" : "AB480327",
+    "lastKnownWriteTime" : 1450065795,
+    "path" : "~/git/knitr-hyde/.gitignore",
+    "project_path" : ".gitignore",
+    "properties" : {
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "type" : "gitignore"
+}

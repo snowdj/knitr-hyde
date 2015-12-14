@@ -1,0 +1,17 @@
+{
+    "contents" : "---\nlayout: default\ntitle: Home\n---\n\n<div class=\"posts\">\n  {% for post in paginator.posts %}\n  <div class=\"post\">\n    <h1 class=\"post-title\">\n      <a href=\"{{ post.url }}\">\n        {{ post.title }}\n      </a>\n    </h1>\n\n    <span class=\"post-date\">{{ post.date | date_to_string }}</span>\n\n    {{ post.content }}\n  </div>\n  {% endfor %}\n</div>\n\n<div class=\"pagination\">\n  {% if paginator.next_page %}\n    <a class=\"pagination-item older\" href=\"{{ site.baseurl }}page{{paginator.next_page}}\">Older</a>\n  {% else %}\n    <span class=\"pagination-item older\">Older</span>\n  {% endif %}\n  {% if paginator.previous_page %}\n    {% if paginator.page == 2 %}\n      <a class=\"pagination-item newer\" href=\"{{ site.baseurl }}\">Newer</a>\n    {% else %}\n      <a class=\"pagination-item newer\" href=\"{{ site.baseurl }}page{{paginator.previous_page}}\">Newer</a>\n    {% endif %}\n  {% else %}\n    <span class=\"pagination-item newer\">Newer</span>\n  {% endif %}\n</div>",
+    "created" : 1450013150533.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1728084923",
+    "id" : "E1CB6383",
+    "lastKnownWriteTime" : 1450065795,
+    "path" : "~/git/knitr-hyde/index.html",
+    "project_path" : "index.html",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "type" : "html"
+}

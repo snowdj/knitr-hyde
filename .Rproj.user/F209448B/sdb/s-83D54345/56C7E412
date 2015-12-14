@@ -1,0 +1,17 @@
+{
+    "contents" : "# Dependencies\nmarkdown:         redcarpet\nhighlighter:      pygments\n\n# Permalinks\npermalink:        pretty\nrelative_permalinks: true\n\n# Setup\ntitle:            Hyde\ntagline:          'A Jekyll theme'\ndescription:      'A brazen two-column <a href=\"http://jekyllrb.com\" target=\"_blank\">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href=\"https://twitter.com/mdo\" target=\"_blank\">@mdo</a>.'\nurl:              http://hyde.getpoole.com\nbaseurl:          /\n\nauthor:\n  name:           'Mark Otto'\n  url:            https://twitter.com/mdo\n\npaginate:         5\n\n# Custom vars\nversion:          2.1.0\n\ngithub:\n  repo:           https://github.com/poole/hyde\n",
+    "created" : 1449957183219.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4169012337",
+    "id" : "56C7E412",
+    "lastKnownWriteTime" : 1450065795,
+    "path" : "~/git/knitr-hyde/_config.yml",
+    "project_path" : "_config.yml",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "type" : "yaml"
+}
