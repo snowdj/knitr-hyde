@@ -16,7 +16,7 @@ Jekyll is not officially supported on Windows, so you had best try this with Mac
 
 If you don't already have an existing project, then fork my [knitr-hyde](https://github.com/homerhanumat/knitr-hyde) repository from Git Hub, rename it as yo wish and then clone it on your own machine.  You can do your project work on the `master` branch and switch to the `gh-pages` branch for blogging.
 
-If you already have  project repository on Git Hub, then simply create a `gh-pages` branch, delete all of the files, download a [zip file[(https://github.com/homerhanumat/knitr-hyde/archive/gh-pages.zip)] of my `gh-pages` branch and extract it into your repo while you have your `gh-pages` branch checked out.
+If you already have  project repository on Git Hub, then simply create a `gh-pages` branch, delete all of the files, download a [zip file](https://github.com/homerhanumat/knitr-hyde/archive/gh-pages.zip) of my `gh-pages` branch and extract it into your repo while you have your `gh-pages` branch checked out.
 
 ### Get the Packages
 
