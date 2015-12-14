@@ -6,13 +6,17 @@ permalink: /:year/:month/:day/:title.html
 # relative_permalinks: true
 
 # Setup
-title:            A Statistics Blog
+title:            My Sample Blog
 tagline:          ''
-description:      'Statstics education with R, and related geekery.'
+description:      'Jekyll-powered, Hyde-themed, knitr-ready.'
 baseurl: "/knitr-hyde/" # the sub-path of your site, e.g. /blog/
                         # not standard for gh-pages, used for knitr
 baseurlstrip:  "/knitr-hyde" # to generate standard links
 url: "https://homerhanumat.github.io" # the base hostname & protocol for your site
+
+# Disqus comments:
+disqus:           true
+shortname:        homerhanumatknitrhyde
 
 author:
   name:           'Homer White'

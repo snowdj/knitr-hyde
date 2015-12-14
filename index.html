@@ -11,8 +11,10 @@ title: Home
         {{ post.title }}
       </a>
     </h1>
+    {% if site.disqus %}
 <a href="{{ site.baseurlstrip }}{{ post.url }}#disqus_thread"
     class = "commentcount"></a>
+    {% endif %}
     <span class="post-date">{{ post.date | date_to_string }}</span>
 
     {{ post.content }}
