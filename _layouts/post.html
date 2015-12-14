@@ -24,6 +24,9 @@ layout: default
   </ul>
 </div>
 
+{% if site.twitter %}
+{% include twitter_button.html %}
+{% endif %}
 
 {% if site.disqus %}
 {% include disqus_comments.html %}

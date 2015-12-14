@@ -18,6 +18,9 @@ url: "https://homerhanumat.github.io" # the base hostname & protocol for your si
 disqus:           true
 shortname:        homerhanumatknitrhyde
 
+# Social Media
+twitter:          true # add a twitter button to each post
+
 author:
   name:           'Homer White'
   url:            https://statistics.rainandrhino.org
