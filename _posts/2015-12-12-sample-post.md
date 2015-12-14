@@ -45,10 +45,23 @@ You can also embed plots, for example:
 
 <p class = "figcaption">Here is a plot for you.</p>
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+The border around the graph above is due to custom CSS for this site (see `public/css/custom.css`).  The caption was produced with some HTML:
 
-You can do math, too:  inline math is like this:  $$ \pi/2 \approx 1.57 $$ and displayed math as well:
+> `<p class = "figcaption">Here is a plot for you.</p>`
+
+You can write mathematics, of course, but the syntax will be a bit different from R Mardown.  Here's some inline math:  $$ \pi/2 \approx 1.57 $$.  There is displayed math as well:
 
 $$ \sum_{i=1}^{n} i = \frac{n(n+1)}{2}.$$
 
-How lovely.
+Here's the source so you can see how the above worked:
+
+
+{% highlight r %}
+You can write mathematics, of course, but the syntax will be a bit different from R Mardown.  Here's some inline math:  $$ \pi/2 \approx 1.57 $$.  There is displayed math as well:
+
+$$ \sum_{i=1}^{n} i = \frac{n(n+1)}{2}.$$
+
+Here's the source ...
+{% endhighlight %}
+
+Happy blogging.
