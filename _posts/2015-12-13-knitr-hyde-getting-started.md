@@ -36,7 +36,7 @@ If you already have a project repository on Git Hub and want a site associated w
 
 #### Getting Files for a User Site
 
-Having created your user respository (`yourgithubusername.github.io` as per the GitHub Pages guide), clone your user repo onto your own machine.  Syat on your `master` branch (you don't create a `gh-pages` branch for a user site.)  Download a [zip file](https://github.com/homerhanumat/knitr-hyde/archive/gh-pages.zip) of my `gh-pages` branch and extract it into your repo.
+Having created your user respository (`yourgithubusername.github.io` as per the GitHub Pages guide), clone your user repo onto your own machine.  Stay on your `master` branch:  you don't create a `gh-pages` branch for a user site.  Download a [zip file](https://github.com/homerhanumat/knitr-hyde/archive/gh-pages.zip) of my `gh-pages` branch and extract it into your repo.
 
 ## Configuring my Files for Your Use
 
@@ -46,13 +46,13 @@ In the root directory, locate the `_config.yaml` file.  Make some choices:
 * Change the value of `baseurl` as per the commented directions.  Make sure there is a trailing '/' at the end of `baseurl`.  For a site associated with a repository named `myProject` the base url will be set to "/myProject/".  For a user site, it's just "/".  Either way. it begins and ends with a "/"!
 * Change `url`.  Since you are pushing to Git Hub, it can be `https://yourgithubusername.github.io`.
 * Decide if you would like people to be able to comment on your posts.  If you want this, leave `disqus` at `true` and register at the [Disqus.com](https://disqus.com/).  You will have the opportunity to add Disqus to your site.  Do this.  As part of this process you will be asked to create a *shortname* for your site.  Set `shortname` accordingly.  If you don't want commenting, simply set `disqus` to `false`.
-* Change `twitter` and `facebook` to `false` if you don't want Tweet and Facebook Share buttons for your posts.
+* Change `twitter` and `facebook` to `false` if you don't want the Tweet and Facebook buttons for your posts.
 
 ### Get the Packages
 
 ### Ruby and Gems
 
-You will need to install [Ruby](https://www.ruby-lang.org/en/downloads/), and then install the [Jekyll](http://jekyllrb.com/) gem.  It's best if you install the same version of Jekyll that Git Hub will use to build your page.  You can find the current version [here](https://pages.github.com/versions/).  At the time of writing this is version 2.4.0, so from the command line run:
+You will need to install [Ruby](https://www.ruby-lang.org/en/downloads/), and then install the [Jekyll](http://jekyllrb.com/) gem.  It's best if you install the same version of Jekyll that Git Hub will use to build your page.  You can find the current version [here](https://pages.github.com/versions/).  At the time of writing this is version 2.4.0, so once you have installed Ruby, open a terminal and run the command:
 
 ```
 sudo gem install jekyll -v 2.4.0
@@ -121,7 +121,7 @@ servr::jekyll()
 
 If you are using R Studio then the site will show up in the Viewer.  Every time you save a change to your draft post, the site will re-build, so you can preview your change in real time.  That's the genius of Yihui Xie.
 
-The post will be rendered using version 1.9 of the Ruby gem `kramdown`.  Look in my `sample-post` for examples of inline and displayed mathematics.  Otherwise you can write pretty as you normally do in R Markdown.
+The post will be rendered using version 1.9 of the Ruby gem `kramdown`.  Look in my `sample-post` for examples of inline and displayed mathematics.  Otherwise you can write pretty much as you normally do in R Markdown.
 
 When you are happy with your post, commit your changes and push your `gh-pages` branch to Git Hub.  You can view your site online at:
 
