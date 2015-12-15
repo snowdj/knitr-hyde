@@ -14,7 +14,7 @@ output:
 
 ## Introduction
 
-The aim of this project is to help students and colleagues who for some reason need to blog on R-related topics.  If you have a particular Git Hub project that deals with R and you want to blog about your work as it develops, then you can use the material from my [`knitr-hyde`](https://github.com/homerhanumat/knitr-hyde) repository to set up, with minimal fuss, a Jekyll-powered site with good styling borrowed from Mark Otto's [Hyde project](https://github.com/poole/hyde).  With help from Yihui Xie's [`servr`](https://github.com/yihui/servr) package and [knitr-jekyll](https://github.com/yihui/knitr-jekyll) code you 'll be able to write your posts in R Markdown, build and preview the site locally, and push to your Git Hub Pages project site when you are ready.
+The aim of this project is to help students and colleagues who for some reason want to blog on R-related topics.  If you have a particular Git Hub project that deals with R and you want to blog about your work as it develops, or if you simply want to blog about R in general, then you can use the material from my [`knitr-hyde`](https://github.com/homerhanumat/knitr-hyde) repository to set up, with minimal fuss, a Jekyll-powered site with good styling borrowed from Mark Otto's [Hyde project](https://github.com/poole/hyde).  With help from Yihui Xie's [`servr`](https://github.com/yihui/servr) package and [knitr-jekyll](https://github.com/yihui/knitr-jekyll) code you 'll be able to write your posts in R Markdown, build and preview the site locally, and push to your Git Hub Pages site when you are ready.
 
 I have tried to minimize what you need to know about Jekyll (and web development generally) in order to get going.  You can learn more about Jekyll when it suits you and eventually make thorough-going alterations to my blog-template, but for now I want you to be able to concentrate on getting your content out there to a waiting public.
 
@@ -22,13 +22,31 @@ I have tried to minimize what you need to know about Jekyll (and web development
 
 ### Platform
 
-Jekyll is not officially supported on Windows, so you had best try this with Mac OSX or a Linux distribution.
+Jekyll is not officially supported on Windows, so you had best try this with Mac OSX, or with a Linux distribution.  (Either way works well, in my experience.)  But if you are determined to give it a try on Windows, consult the documentation [here](http://jekyllrb.com/docs/windows/).
 
 ### Get My Files
 
-If you don't already have an existing project, then fork my [knitr-hyde](https://github.com/homerhanumat/knitr-hyde) repository from Git Hub, rename it as you wish and then clone it on your own machine.  You can do your project work on the `master` branch and switch to the `gh-pages` branch for blogging.
+Consult the [Github Pages guide](https://pages.github.com/).  Decide whether you want a general user site or a site associated with a partcular project repository.
 
-If you already have a project repository on Git Hub, then simply create a `gh-pages` branch, delete all of the files, download a [zip file](https://github.com/homerhanumat/knitr-hyde/archive/gh-pages.zip) of my `gh-pages` branch and extract it into your repo while you have your `gh-pages` branch checked out.
+#### Getting Files for a Project Site
+
+If you don't already have an existing project but want a project-associated site, then fork my [knitr-hyde](https://github.com/homerhanumat/knitr-hyde) repository from Git Hub, rename it as you wish and then clone it on your own machine.  You can do your project work on the `master` branch and switch to the `gh-pages` branch for blogging.
+
+If you already have a project repository on Git Hub and want a site associated with it, then simply create a `gh-pages` branch, delete all of the files, download a [zip file](https://github.com/homerhanumat/knitr-hyde/archive/gh-pages.zip) of my `gh-pages` branch and extract it into your repo while you have your `gh-pages` branch checked out.
+
+#### Getting Files for a User Site
+
+Having created your user respository (`yourgithubusername.github.io` as per the GitHub Pages guide), clone your user repo onto your own machine.  Syat on your `master` branch (you don't create a `gh-pages` branch for a user site.)  Download a [zip file](https://github.com/homerhanumat/knitr-hyde/archive/gh-pages.zip) of my `gh-pages` branch and extract it into your repo.
+
+## Configuring my Files for Your Use
+
+In the root directory, locate the `_config.yaml` file.  Make some choices:
+
+* Change the `title` and `description`.
+* Change the value of `baseurl` as per the commented directions.  Make sure there is a trailing '/' at the end of `baseurl`.  For a site associated with a repository named `myProject` the base url will be set to "/myProject/".  For a user site, it's just "/".  Either way. it begins and ends with a "/"!
+* Change `url`.  Since you are pushing to Git Hub, it can be `https://yourgithubusername.github.io`.
+* Decide if you would like people to be able to comment on your posts.  If you want this, leave `disqus` at `true` and register at the [Disqus.com](https://disqus.com/).  You will have the opportunity to add Disqus to your site.  Do this.  As part of this process you will be asked to create a *shortname* for your site.  Set `shortname` accordingly.  If you don't want commenting, simply set `disqus` to `false`.
+* Change `twitter` and `facebook` to `false` if you don't want Tweet and Facebook Share buttons for your posts.
 
 ### Get the Packages
 
@@ -61,15 +79,7 @@ You'll need Yihui Xie's `servr` package.  In R, run:
 install.packages("servr")
 {% endhighlight %}
 
-## Configuration
 
-Make sure you are on the `gh-pages` branch.  In the root directory, locate the `_config.yaml` file.  Make some choices:
-
-* Change the `title` and `description`.
-* Change the values of `baseurl` and `baseurlstrip` to the name of your project repository.  Make sure there is a trailing '/' at the end of `baseurl`, but not at the end of `baseurlstrip`.
-* Change `url`.  Since you are pushing to Git Hub, it can be `https://yourgithubusername.github.io`.
-* Decide if you would like people to be able to comment on your posts.  If you want this, leave `disqus` at `true` and register at the [Disqus.com](https://disqus.com/).  You will have the opportunity to add Disqus to your site.  Do this.  As part of this process you will be asked to create a *shortname* for your site.  Set `shortname` accordingly.  If you don't want commenting, simply set `disqus` to `false`.
-* Change `twitter` and `facebook` to `false` if you don't want Tweet and Facebook Share buttons for your posts.
 
 ## Authoring
 
@@ -93,7 +103,7 @@ output:
 Set the title, author and date as you wish.  If your post has categories, list them, for example:
 
 ```
-categories:  [R, 'Unruly Rants', 'Marsupial Studies']
+categories:  [R, 'Marsupial Studies']
 ```
 
 Note that mutli-word category-names are quoted.
@@ -117,6 +127,20 @@ When you are happy with your post, commit your changes and push your `gh-pages` 
 
 > https://yourgithubusername.github.io/yourProjectName
 
+**Note on Compatibility**:  If for one reason or another you had already installed Jekyll prior to working with this post, then it's probably a version different from the one currently used by GitHub.  In that case, you will need to tell `servr::jekyll()` to use the right version.  To do this, find where your the Jekyll gems are installed using:
+
+```
+gem list -d 'jekyll'
+```
+
+Then create a symlink to the appropriate version.  Say you name the symlink `jekyll-2.4.0`.  Then to preview you would run:
+
+
+{% highlight r %}
+server::jekyll(command = 'jekyll-2.4.0 build')
+{% endhighlight %}
+
+
 ## Further Customization
 
 Make the site entirely your own by erasing my posts.  Delete the unwanted R Markdown sources, and delete their processed Markdown derivatives from the `_posts` folder.
@@ -125,4 +149,10 @@ Styling is provided from Mark Otto's excellent Hyde project.  Hyde comes with ei
 
 If you know a bit of CSS then you might want to play around with the  `public/css/custom.css` file.
 
-Eventually you should learn more about Jekyll, and especially the [Liquid](http://liquidmarkup.org/) templating system that Jekyll supports.  Then you can customize the site even further, for example by adding your own sidebar widgets.
+Eventually you should learn more about Jekyll and the [Liquid](http://liquidmarkup.org/) templating system that Jekyll supports.  Then you can customize the site even further:
+
+* adding or taking away sidebar widgets
+* displaying author names
+* using draft posts
+
+and more.  Happy blogging!

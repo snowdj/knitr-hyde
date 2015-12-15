@@ -14,6 +14,9 @@ baseurl: "/knitr-hyde/" # the sub-path of your site, e.g. /myProject/
 # baseurlstrip:  "/knitr-hyde" # to generate standard links
 url: "https://homerhanumat.github.io" # the base hostname & protocol for your site
 
+# set limit on number of post to appear on Home page
+homepostlimit: 4
+
 # Disqus comments:
 disqus:           true
 shortname:        homerhanumatknitrhyde
