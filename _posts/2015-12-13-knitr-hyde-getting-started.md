@@ -127,17 +127,11 @@ When you are happy with your post, commit your changes and push your `gh-pages` 
 
 > https://yourgithubusername.github.io/yourProjectName
 
-**Note on Compatibility**:  If for one reason or another you had already installed Jekyll prior to working with this post, then it's probably a version different from the one currently used by GitHub.  In that case, you will need to tell `servr::jekyll()` to use the right version.  To do this, find where your the Jekyll gems are installed using:
-
-```
-gem list -d 'jekyll'
-```
-
-Then create a symlink to the appropriate version.  Say you name the symlink `jekyll-2.4.0`.  Then to preview you would run:
+**Note on Compatibility**:  If for one reason or another you had already installed Jekyll prior to working with this post, then it's probably a version different from the one currently used by GitHub.  If yo uwant to keep that other version around then you will need to tell `servr::jekyll()` to build your site with the Github-compatible version.  Suppose, for example that the correct version is Jekyll-2.4.0.  Then to preview you would run:
 
 
 {% highlight r %}
-server::jekyll(command = 'jekyll-2.4.0 build')
+server::jekyll(command = 'jekyll _2.4.0_ build')
 {% endhighlight %}
 
 
