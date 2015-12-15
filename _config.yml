@@ -9,9 +9,15 @@ permalink: /:year/:month/:day/:title.html
 title:            My Sample Blog
 tagline:          ''
 description:      'Jekyll-powered, Hyde-themed, knitr-ready.'
-baseurl: "/knitr-hyde/" # the sub-path of your site, e.g. /myProject/
-                        # not standard for gh-pages, used for knitr
-# baseurlstrip:  "/knitr-hyde" # to generate standard links
+baseurl: "/knitr-hyde/" # If you are making a gh-pages project blog, this is
+                        # the name of your project repo, surrounded by /'s
+                        # Set it to just "/" if you are making a user page.
+                        
+                        # That trailing slash is important for proper storage
+                        # of figures gnerated from knitting.
+                        # Adjustmentts are made as needed in liquid code, e.g.:
+                        # {{ site.baseurl }}{{ post.url | remove_first: '/' }}
+                        
 url: "https://homerhanumat.github.io" # the base hostname & protocol for your site
 
 # set limit on number of post to appear on Home page
