@@ -11,7 +11,7 @@ tagline:          ''
 description:      'Jekyll-powered, Hyde-themed, knitr-ready.'
 baseurl: "/knitr-hyde/" # the sub-path of your site, e.g. /myProject/
                         # not standard for gh-pages, used for knitr
-baseurlstrip:  "/knitr-hyde" # to generate standard links
+# baseurlstrip:  "/knitr-hyde" # to generate standard links
 url: "https://homerhanumat.github.io" # the base hostname & protocol for your site
 
 # Disqus comments:
