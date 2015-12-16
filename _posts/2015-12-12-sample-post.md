@@ -57,7 +57,7 @@ Here's the source so you can see how the above worked:
 
 
 {% highlight r %}
-You can write mathematics, of course, but the syntax will be a bit different from R Mardown.  Here's some inline math:  $$ \pi/2 \approx 1.57 $$.  There is displayed math as well:
+You can write mathematics, of course, but the syntax will be a bit different from R Markdown.  Here's some inline math:  $$ \pi/2 \approx 1.57 $$.  There is displayed math as well:
 
 $$ \sum_{i=1}^{n} i = \frac{n(n+1)}{2}.$$
 

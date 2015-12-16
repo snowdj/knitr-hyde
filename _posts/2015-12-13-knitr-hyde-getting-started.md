@@ -18,6 +18,8 @@ The aim of this project is to help students and colleagues who for some reason w
 
 I have tried to minimize what you need to know about Jekyll (and web development generally) in order to get going.  You can learn more about Jekyll when it suits you and eventually make thorough-going alterations to my blog-template, but for now I want you to be able to concentrate on getting your content out there to a waiting public.
 
+**Note**:  Before you commit yourself to a Hyde-themed blog, check out the [same R-set-up](https://homerhanumat.github.io/knitr-lanyon) but using Mark Otto's Lanyon theme with the cool toggle-able sidebar!
+
 ## Preliminaries
 
 ### Platform
