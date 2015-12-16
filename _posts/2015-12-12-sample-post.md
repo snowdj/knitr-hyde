@@ -16,6 +16,7 @@ output:
 
 
 
+
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
@@ -57,7 +58,7 @@ Here's the source so you can see how the above worked:
 
 
 {% highlight r %}
-You can write mathematics, of course, but the syntax will be a bit different from R Mardown.  Here's some inline math:  $$ \pi/2 \approx 1.57 $$.  There is displayed math as well:
+You can write mathematics, of course, but the syntax will be a bit different from R Markdown.  Here's some inline math:  $$ \pi/2 \approx 1.57 $$.  There is displayed math as well:
 
 $$ \sum_{i=1}^{n} i = \frac{n(n+1)}{2}.$$
 
