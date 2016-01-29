@@ -74,13 +74,13 @@ sudo gem install jekyll -v 2.4.0
 You'll also want a gem that keeps all dependencies of Jekyll at the same version level as used by Git Hub:
 
 ```
-sudo gem install gh-pages
+sudo gem install github-pages
 ```
 
 In order to stay current with Git Hub, update this gem frequently:
 
 ```
-sudo gem update gh-pages
+sudo gem update github-pages
 ```
 
 ### The servr Package
@@ -144,7 +144,7 @@ When you are happy with your post, commit your changes and push your `gh-pages` 
 
 
 {% highlight r %}
-server::jekyll(command = 'jekyll _2.4.0_ build')
+servr::jekyll(command = 'jekyll _2.4.0_ build')
 {% endhighlight %}
 
 
