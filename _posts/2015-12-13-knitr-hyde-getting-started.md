@@ -65,10 +65,10 @@ In the root directory, locate the `_config.yaml` file.  Make some choices:
 
 ### Ruby and Gems
 
-You will need to install [Ruby](https://www.ruby-lang.org/en/downloads/), and then install the [Jekyll](http://jekyllrb.com/) gem.  It's best if you install the same version of Jekyll that Git Hub will use to build your page.  You can find the current version [here](https://pages.github.com/versions/).  At the time of writing this is version 2.4.0, so once you have installed Ruby, open a terminal and run the command:
+You will need to install [Ruby](https://www.ruby-lang.org/en/downloads/), and then install the [Jekyll](http://jekyllrb.com/) gem.  It's best if you install the same version of Jekyll that Git Hub will use to build your page.  You can find the current version [here](https://pages.github.com/versions/).  At the time of writing this is version 3.0.2, so once you have installed Ruby, open a terminal and run the command:
 
 ```
-sudo gem install jekyll -v 2.4.0
+sudo gem install jekyll -v 3.0.2
 ```
 
 You'll also want a gem that keeps all dependencies of Jekyll at the same version level as used by Git Hub:
@@ -140,11 +140,11 @@ When you are happy with your post, commit your changes and push your `gh-pages` 
 
 > https://yourgithubusername.github.io/yourProjectName
 
-**Note on Compatibility**:  If for one reason or another you had already installed Jekyll prior to working with this post, then it's probably a version different from the one currently used by GitHub.  If yo uwant to keep that other version around then you will need to tell `servr::jekyll()` to build your site with the Github-compatible version.  Suppose, for example that the correct version is Jekyll-2.4.0.  Then to preview you would run:
+**Note on Compatibility**:  If for one reason or another you had already installed Jekyll prior to working with this post, then it's probably a version different from the one currently used by GitHub.  If yo uwant to keep that other version around then you will need to tell `servr::jekyll()` to build your site with the Github-compatible version.  Suppose, for example that the correct version is Jekyll-3.0.2.  Then to preview you would run:
 
 
 {% highlight r %}
-servr::jekyll(command = 'jekyll _2.4.0_ build')
+servr::jekyll(command = 'jekyll _3.0.2_ build')
 {% endhighlight %}
 
 

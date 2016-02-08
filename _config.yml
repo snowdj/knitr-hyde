@@ -1,5 +1,7 @@
 # Dependencies
 markdown:         kramdown
+kramdown:
+  syntax-highlighter:  rouge
 
 # Permalinks
 permalink: /:year/:month/:day/:title.html
