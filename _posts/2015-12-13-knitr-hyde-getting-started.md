@@ -65,13 +65,13 @@ In the root directory, locate the `_config.yaml` file.  Make some choices:
 
 ### Ruby and Gems
 
-You will need to install [Ruby](https://www.ruby-lang.org/en/downloads/), and then install the [Jekyll](http://jekyllrb.com/) gem.  It's best if you install the same version of Jekyll that Git Hub will use to build your page.  You can find the current version [here](https://pages.github.com/versions/).  At the time of writing this is version 3.0.2, so once you have installed Ruby, open a terminal and run the command:
+You will need to install [Ruby](https://www.ruby-lang.org/en/downloads/), and then install the [Jekyll](http://jekyllrb.com/) gem.  It's best if you install the same version of Jekyll that Git Hub will use to build your page.  You can find the current version [here](https://pages.github.com/versions/).  At the time of writing this is version 3.0.3, so once you have installed Ruby, open a terminal and run the command:
 
 ```
-sudo gem install jekyll -v 3.0.2
+sudo gem install jekyll -v 3.0.3
 ```
 
-You'll also want a gem that keeps all dependencies of Jekyll at the same version level as used by Git Hub:
+You'll also want a gem that keeps your Jekyll version (and all dependencies of Jekyll) at the same version level as used by Git Hub:
 
 ```
 sudo gem install github-pages
@@ -82,6 +82,8 @@ In order to stay current with Git Hub, update this gem frequently:
 ```
 sudo gem update github-pages
 ```
+
+**Note:**  If you simply install the `github-pages` gem first then you don't have to bother with installing Jekyll:  `github-pages` will install the correct version for you.
 
 ### The servr Package
 

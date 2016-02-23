@@ -4,6 +4,7 @@ _site
 .ruby-version
 knitr-hyde.Rproj
 .Rhistory
+.RData
 
 # Numerous always-ignore extensions
 *.diff
