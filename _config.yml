@@ -13,7 +13,7 @@ tagline:          ''
 description:      'Jekyll-powered, Hyde-themed, knitr-ready.'
 baseurl: "/knitr-hyde" # If you are making a gh-pages project blog, this is
                         # the name of your project repo, preceded by a /'
-                        # Set it to just "" if you are making a user page.
+                        # Set it to just "/" if you are making a user page.
                         
 baseurlknitr:  "/knitr-hyde/" # This will always be your baseurl plus and extra '/'
                                 # at the end.  It's used only when knitr renders
