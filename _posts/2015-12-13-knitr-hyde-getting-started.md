@@ -65,13 +65,9 @@ In the root directory, locate the `_config.yaml` file.  Make some choices:
 
 ### Ruby and Gems
 
-You will need to install [Ruby](https://www.ruby-lang.org/en/downloads/), and then install the [Jekyll](http://jekyllrb.com/) gem.  It's best if you install the same version of Jekyll that Git Hub will use to build your page.  You can find the current version [here](https://pages.github.com/versions/).  At the time of writing this is version 3.0.3, so once you have installed Ruby, open a terminal and run the command:
+You will need to install [Ruby](https://www.ruby-lang.org/en/downloads/), and then install the [Jekyll](http://jekyllrb.com/) gem and all of the other gems that depend upon it.  It's best if you install the versions of these gems that Git Hub will use to build your page.  The currently-used versions are listed [here](https://pages.github.com/versions/).
 
-```
-sudo gem install jekyll -v 3.0.3
-```
-
-You'll also want a gem that keeps your Jekyll version (and all dependencies of Jekyll) at the same version level as used by Git Hub:
+That seems like a lot to track of, but fortunately the `github-pages` gem keeps all your Jekyll-related gems in sync with Git Hub:
 
 ```
 sudo gem install github-pages
@@ -83,7 +79,7 @@ In order to stay current with Git Hub, update this gem frequently:
 sudo gem update github-pages
 ```
 
-**Note:**  If you simply install the `github-pages` gem first then you don't have to bother with installing Jekyll:  `github-pages` will install the correct version for you.
+Updating the `github-pages` gem updates Jekyll and all of the Jekyll-related gems, too.
 
 ### The servr Package
 
@@ -136,17 +132,17 @@ servr::jekyll()
 
 If you are using R Studio then the site will show up in the Viewer.  Every time you save a change to your draft post, the site will re-build, so you can preview your change in real time.  That's the genius of Yihui Xie.
 
-The post will be rendered using version 1.9 of the Ruby gem `kramdown`.  Look in my `sample-post` for examples of inline and displayed mathematics.  Otherwise you can write pretty much as you normally do in R Markdown.
+The post will be rendered using the Ruby gem `kramdown`.  Look in my `sample-post` for examples of inline and displayed mathematics.  Otherwise you can write pretty much as you normally do in R Markdown.
 
 When you are happy with your post, commit your changes and push your `gh-pages` branch to Git Hub.  You can view your site online at:
 
 > https://yourgithubusername.github.io/yourProjectName
 
-**Note on Compatibility**:  If for one reason or another you had already installed Jekyll prior to working with this post, then it's probably a version different from the one currently used by GitHub.  If yo uwant to keep that other version around then you will need to tell `servr::jekyll()` to build your site with the Github-compatible version.  Suppose, for example that the correct version is Jekyll-3.0.2.  Then to preview you would run:
+**Note on Compatibility**:  If for one reason or another you had already installed Jekyll prior to working with this post, then it's probably a version different from the one currently used by GitHub.  If you want to keep that other version around then you will need to tell `servr::jekyll()` to build your site with the Github-compatible version.  Suppose, for example that the correct version is Jekyll-3.2.1.  Then to preview you would run:
 
 
 {% highlight r %}
-servr::jekyll(command = 'jekyll _3.0.2_ build')
+servr::jekyll(command = 'jekyll _3.2.1_ build')
 {% endhighlight %}
 
 
