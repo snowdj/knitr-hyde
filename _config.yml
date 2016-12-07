@@ -19,7 +19,7 @@ baseurlknitr:  "/knitr-hyde/" # This will always be your baseurl plus and extra 
                                 # at the end.  It's used only when knitr renders
                                 # your R Markdown files.
                         
-url: "https://homerhanumat.github.io" # the base hostname & protocol for your site
+url: "https://snowdj.github.io" # the base hostname & protocol for your site
 
 # set limit on number of post to appear on Home page
 homepostlimit: 4
